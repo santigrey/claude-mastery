@@ -1,0 +1,107 @@
+{
+  "run_time": "2026-03-25T10:36:21.367005",
+  "score": 100.0,
+  "passed": 10,
+  "failed": 0,
+  "total": 10,
+  "results": [
+    {
+      "id": "TC001",
+      "description": "Basic math calculation",
+      "passed": true,
+      "reason": "All keywords found",
+      "tools_called": [
+        "calculate"
+      ],
+      "elapsed": 3.32
+    },
+    {
+      "id": "TC002",
+      "description": "DateTime retrieval",
+      "passed": true,
+      "reason": "Tool 'get_datetime' was called",
+      "tools_called": [
+        "get_datetime"
+      ],
+      "elapsed": 7.11
+    },
+    {
+      "id": "TC003",
+      "description": "Homelab server status",
+      "passed": true,
+      "reason": "All keywords found",
+      "tools_called": [
+        "homelab_status"
+      ],
+      "elapsed": 6.11
+    },
+    {
+      "id": "TC004",
+      "description": "No tool needed \u2014 general knowledge",
+      "passed": true,
+      "reason": "All keywords found",
+      "tools_called": [],
+      "elapsed": 2.84
+    },
+    {
+      "id": "TC005",
+      "description": "Multi-tool \u2014 date and math",
+      "passed": true,
+      "reason": "All keywords found",
+      "tools_called": [
+        "get_datetime",
+        "calculate"
+      ],
+      "elapsed": 3.71
+    },
+    {
+      "id": "TC006",
+      "description": "All homelab servers",
+      "passed": true,
+      "reason": "All keywords found",
+      "tools_called": [
+        "homelab_status"
+      ],
+      "elapsed": 5.49
+    },
+    {
+      "id": "TC007",
+      "description": "LLM judge \u2014 quality of explanation",
+      "passed": true,
+      "reason": "PASS\n\nThe response clearly explains vector databases in simple terms that a non-technical person can understand. It:\n\n1. **Explains vector databases clearly**: Defines them as specialized databases for storing high-dimensional vectors and uses accessible analogies like the library metaphor\n2. **Mentions similarity search**: Explicitly discusses similarity searches as a key feature and explains why they're important (finding items that are \"close\" in meaning rather than exact matches)\n3. **Is understandable to non-technical audiences**: Uses simple language, concrete examples (like \"cat\" being represented as numbers), relatable use cases (recommendation systems, search engines), and helpful analogies throughout\n\nThe response is well-structured, progressively builds understanding, and successfully bridges technical concepts with everyday examples.",
+      "tools_called": [],
+      "elapsed": 9.85
+    },
+    {
+      "id": "TC008",
+      "description": "Complex calculation",
+      "passed": true,
+      "reason": "All keywords found",
+      "tools_called": [
+        "calculate",
+        "calculate"
+      ],
+      "elapsed": 6.26
+    },
+    {
+      "id": "TC009",
+      "description": "TheBeast specific status",
+      "passed": true,
+      "reason": "All keywords found",
+      "tools_called": [
+        "homelab_status"
+      ],
+      "elapsed": 5.04
+    },
+    {
+      "id": "TC010",
+      "description": "No hallucination check",
+      "passed": true,
+      "reason": "PASS\n\nThe response correctly indicates that the server \"shadowbox\" was not found in the system and does not make up any fictional details about it. Instead, it provides helpful information about the available servers and offers alternatives, which is appropriate behavior when a requested server doesn't exist.",
+      "tools_called": [
+        "homelab_status"
+      ],
+      "elapsed": 4.37
+    }
+  ]
+}
